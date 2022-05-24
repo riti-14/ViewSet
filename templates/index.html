@@ -1,0 +1,15 @@
+<h1>i am index page..</h1>
+
+
+{% load static %}
+
+{% block content %}
+
+<form method="post" action="#">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+{% endblock %}
